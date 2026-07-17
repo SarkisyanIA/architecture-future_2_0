@@ -1,0 +1,118 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Страница-1" id="QskmTXGW-lclkew6wHvZ">
+    <mxGraphModel dx="1292" dy="774" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6vYlZXPytpc-HgHJFnu5-81" edge="1" parent="1" source="6vYlZXPytpc-HgHJFnu5-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="6vYlZXPytpc-HgHJFnu5-84">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6vYlZXPytpc-HgHJFnu5-82" parent="1" style="shape=ellipse;html=1;dashed=0;whiteSpace=wrap;perimeter=ellipsePerimeter;" value="Передача финансовых данных.&lt;br&gt;Apache Camel" vertex="1">
+          <mxGeometry height="100" width="100" x="400" y="1030" as="geometry" />
+        </mxCell>
+        <mxCell id="6vYlZXPytpc-HgHJFnu5-83" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="6vYlZXPytpc-HgHJFnu5-82" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="260.0000000000002" y="1080" as="sourcePoint" />
+            <mxPoint x="360" y="1165" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6vYlZXPytpc-HgHJFnu5-84" parent="1" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.dataStoreID;align=left;spacingLeft=3;points=[[0,0],[0.5,0],[1,0],[0,0.5],[1,0.5],[0,1],[0.5,1],[1,1]];" value="" vertex="1">
+          <mxGeometry height="30" width="100" x="650" y="1065" as="geometry" />
+        </mxCell>
+        <mxCell id="6vYlZXPytpc-HgHJFnu5-85" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Домен crm -&amp;gt; Домен фин сервис (в рамках миграции)" vertex="1">
+          <mxGeometry height="30" width="130" x="395" y="980" as="geometry" />
+        </mxCell>
+        <mxCell id="6vYlZXPytpc-HgHJFnu5-86" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Сохранение записи в БД Финансов" vertex="1">
+          <mxGeometry height="30" width="110" x="650" y="1015" as="geometry" />
+        </mxCell>
+        <mxCell id="6vYlZXPytpc-HgHJFnu5-107" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Теги:&lt;div&gt;1. Домен ИИ&lt;/div&gt;&lt;div&gt;2. Домен аналитики (BI)&lt;/div&gt;&lt;div&gt;3. Домен отчетности (Портал самообслуживания)&lt;/div&gt;&lt;div&gt;4. Домен crm (работа с данными клиентов)&lt;/div&gt;&lt;div&gt;5. Домен медицинский (работа с медицинскими данными)&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;6. Домен финансов&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="145" width="240" x="20" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_tb6vAcH4vAS73zQnN_5-1" parent="1" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.dataStoreID;align=left;spacingLeft=3;points=[[0,0],[0.5,0],[1,0],[0,0.5],[1,0.5],[0,1],[0.5,1],[1,1]];" value="" vertex="1">
+          <mxGeometry height="30" width="100" x="160" y="1065" as="geometry" />
+        </mxCell>
+        <mxCell id="_tb6vAcH4vAS73zQnN_5-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Выгрузка из DWH" vertex="1">
+          <mxGeometry height="30" width="60" x="160" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="_tb6vAcH4vAS73zQnN_5-3" edge="1" parent="1" source="_tb6vAcH4vAS73zQnN_5-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_tb6vAcH4vAS73zQnN_5-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_tb6vAcH4vAS73zQnN_5-4" parent="1" style="shape=ellipse;html=1;dashed=0;whiteSpace=wrap;perimeter=ellipsePerimeter;" value="Передача медицинских данных.&lt;br&gt;Apache Camel" vertex="1">
+          <mxGeometry height="100" width="100" x="400" y="635" as="geometry" />
+        </mxCell>
+        <mxCell id="_tb6vAcH4vAS73zQnN_5-5" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="_tb6vAcH4vAS73zQnN_5-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="260.0000000000002" y="685" as="sourcePoint" />
+            <mxPoint x="360" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_tb6vAcH4vAS73zQnN_5-20" edge="1" parent="1" source="_tb6vAcH4vAS73zQnN_5-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_tb6vAcH4vAS73zQnN_5-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_tb6vAcH4vAS73zQnN_5-6" parent="1" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.dataStoreID;align=left;spacingLeft=3;points=[[0,0],[0.5,0],[1,0],[0,0.5],[1,0.5],[0,1],[0.5,1],[1,1]];" value="" vertex="1">
+          <mxGeometry height="30" width="100" x="650" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="_tb6vAcH4vAS73zQnN_5-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Домен crm -&amp;gt; Домен мед сервис (в рамках миграции) -&amp;gt; Домен ИИ&amp;nbsp;" vertex="1">
+          <mxGeometry height="30" width="130" x="395" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="_tb6vAcH4vAS73zQnN_5-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Сохранение записи в БД Медицины" vertex="1">
+          <mxGeometry height="30" width="110" x="650" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="_tb6vAcH4vAS73zQnN_5-9" parent="1" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.dataStoreID;align=left;spacingLeft=3;points=[[0,0],[0.5,0],[1,0],[0,0.5],[1,0.5],[0,1],[0.5,1],[1,1]];" value="" vertex="1">
+          <mxGeometry height="30" width="100" x="160" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="_tb6vAcH4vAS73zQnN_5-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Выгрузка из DWH" vertex="1">
+          <mxGeometry height="30" width="60" x="160" y="605" as="geometry" />
+        </mxCell>
+        <mxCell id="_tb6vAcH4vAS73zQnN_5-11" edge="1" parent="1" source="_tb6vAcH4vAS73zQnN_5-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_tb6vAcH4vAS73zQnN_5-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_tb6vAcH4vAS73zQnN_5-12" parent="1" style="shape=ellipse;html=1;dashed=0;whiteSpace=wrap;perimeter=ellipsePerimeter;" value="Передача аналитических данных.&lt;br&gt;Apache Camel" vertex="1">
+          <mxGeometry height="100" width="100" x="400" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="_tb6vAcH4vAS73zQnN_5-13" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="_tb6vAcH4vAS73zQnN_5-12" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="260.0000000000002" y="330" as="sourcePoint" />
+            <mxPoint x="360" y="415" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_tb6vAcH4vAS73zQnN_5-26" edge="1" parent="1" source="_tb6vAcH4vAS73zQnN_5-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="_tb6vAcH4vAS73zQnN_5-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_tb6vAcH4vAS73zQnN_5-14" parent="1" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.dataStoreID;align=left;spacingLeft=3;points=[[0,0],[0.5,0],[1,0],[0,0.5],[1,0.5],[0,1],[0.5,1],[1,1]];" value="" vertex="1">
+          <mxGeometry height="30" width="100" x="650" y="315" as="geometry" />
+        </mxCell>
+        <mxCell id="_tb6vAcH4vAS73zQnN_5-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Домен crm -&amp;gt; Домен портал сервис (в рамках миграции)" vertex="1">
+          <mxGeometry height="30" width="130" x="395" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="_tb6vAcH4vAS73zQnN_5-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Сохранение записи в БД отчетов" vertex="1">
+          <mxGeometry height="30" width="110" x="650" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="_tb6vAcH4vAS73zQnN_5-17" parent="1" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.dataStoreID;align=left;spacingLeft=3;points=[[0,0],[0.5,0],[1,0],[0,0.5],[1,0.5],[0,1],[0.5,1],[1,1]];" value="" vertex="1">
+          <mxGeometry height="30" width="100" x="160" y="315" as="geometry" />
+        </mxCell>
+        <mxCell id="_tb6vAcH4vAS73zQnN_5-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Выгрузка из DWH" vertex="1">
+          <mxGeometry height="30" width="60" x="160" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="_tb6vAcH4vAS73zQnN_5-22" edge="1" parent="1" source="_tb6vAcH4vAS73zQnN_5-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_tb6vAcH4vAS73zQnN_5-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_tb6vAcH4vAS73zQnN_5-19" parent="1" style="shape=ellipse;html=1;dashed=0;whiteSpace=wrap;perimeter=ellipsePerimeter;" value="Обработка данных для ИИ" vertex="1">
+          <mxGeometry height="100" width="100" x="650" y="735" as="geometry" />
+        </mxCell>
+        <mxCell id="_tb6vAcH4vAS73zQnN_5-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Оператор ИИ" vertex="1">
+          <mxGeometry height="50" width="110" x="645" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="_tb6vAcH4vAS73zQnN_5-23" edge="1" parent="1" source="_tb6vAcH4vAS73zQnN_5-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_tb6vAcH4vAS73zQnN_5-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_tb6vAcH4vAS73zQnN_5-24" parent="1" style="shape=ellipse;html=1;dashed=0;whiteSpace=wrap;perimeter=ellipsePerimeter;" value="Обработка данных для аналитики" vertex="1">
+          <mxGeometry height="100" width="100" x="650" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="_tb6vAcH4vAS73zQnN_5-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="BI-engener" vertex="1">
+          <mxGeometry height="50" width="110" x="645" y="505" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,61 @@
+@startuml
+title SmartHome Container Diagram
+
+top to bottom direction
+
+!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Component.puml
+
+Person(client, "Client", "Пациенты, использующие системы 'Портал самообслуживания'")
+Person(medic, "Medic", "Врачи и медицинский персонал")
+Person(admin, "Admin", "Работник регистратуры")
+Person(biworker, "BI-engineer", "Специалист по аналитике")
+Person(aiworker, "AI-operator", "Специалист по ИИ")
+System(future, "Future2.0 System", "Future2.0 System")
+
+Container_Boundary(future, "Future2.0 System") {
+  Container(MedicWebInterface, "Medic Web Interface", "React", "Интерфейс взаимодействия мед персонала с мед данными")
+  Container(CrmWebInterface, "CRM Web Interface", "React", "Интерфейс взаимодействия c данными по клиентам")
+  Container(ClientWebInterface, "Client Web Interface", "React", "Интерфейс взаимодействия пациентов (Портал саммобслуживания)")
+  Container(APIGateway, "API Gateway", "Java, Spring", "A single point of entry to the application")
+  Container(iam, "Identity and Access Management", "Keycloak", "Сервис авторизации и аутентификации")
+  Container(crm, "CRM Application", "Java, Spring", "Система для упраления данными клиентов, записях пациентов и т.д.")
+  Container(fin, "Finance Application", "Java, Spring", "Финансовая система, инкапсулирующая все финансовые бизнес-задачи")
+  Container(ai, "AI Application", "Python", "Сервис для работы ИИ")
+  Container(medicsys, "Medic Application", "Java, Spring", "Сервис для взаиможействия с медицинскими данными")
+  Container(powerbi, "PowerBi", "PowerBi", "Инструмент для построения дашбордов")
+  Container(repo, "Report Application", "Java, Spring", "Сервис для построения отчетов (Портал самообслуживания)")
+  Container(iamdb, "IaM Database", "PostgreSQL", "Хранилище данных для авторизации и аутентификации")
+  Container(crmdb, "CRM Database", "SQL Server", "Хранилище данных пациентов, записи пациентов и т.д")
+  Container(findb, "Finance Database", "PostgreSQL", "Хранилище финансовых данных")
+  Container(medicdb, "Medic Database", "S3 (Minio)", "Хранилище медицнских данных")
+  Container(repodb, "Report Database", "ClickHouse", "Хранилище данных для аналитики и отчетов")
+  Container(camel, "Apache Camel", "Apache Camel", "Интеграционная платформа передачи данных")
+}
+
+Rel(client, ClientWebInterface, "")
+Rel(medic, MedicWebInterface, "")
+Rel(medic, CrmWebInterface, "")
+Rel(admin, CrmWebInterface, "")
+Rel(biworker, powerbi, "")
+Rel(aiworker, ai, "")
+Rel(ClientWebInterface, APIGateway, "",HTTP/REST)
+Rel(MedicWebInterface, APIGateway, "",HTTP/REST)
+Rel(CrmWebInterface, APIGateway, "",HTTP/REST)
+Rel(APIGateway, iam, "",HTTP/REST)
+Rel(APIGateway, crm, "",HTTP/REST)
+Rel(APIGateway, fin, "",HTTP/REST)
+Rel(APIGateway, repo, "",HTTP/REST)
+Rel(APIGateway, medicsys, "",HTTP/REST)
+Rel(repo,repodb, "",)
+Rel(medicsys,medicdb, "",)
+Rel(fin,findb, "Reads/Writes data",SQL/TCP)
+Rel(crm,crmdb,"Reads/Writes data",SQL/TCP)
+Rel(iam,iamdb,"Reads/Writes data",SQL/TCP)
+Rel(powerbi,repodb,"Reads/Writes observation data",SQL/TCP)
+Rel(ai,medicdb,"",)
+
+Rel(crmdb,camel,"Reads/Writes data",SQL/TCP)
+Rel(camel,findb, "Reads/Writes data",SQL/TCP)
+Rel(camel,repodb,"Reads/Writes observation data",SQL/TCP)
+Rel(camel,medicdb,"Reads/Writes device installation data",SQL/TCP)
+@enduml
